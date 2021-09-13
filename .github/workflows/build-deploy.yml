@@ -55,6 +55,7 @@ jobs:
 
   remove:
       name: Delete deploymnet folder
+      needs: deploy
       runs-on: ubuntu-latest
 
       steps:
