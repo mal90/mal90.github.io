@@ -53,11 +53,19 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
 
-    - name: Remove file
-      uses: JesseTG/rm@v1.0.2
-      with:
-        path: /hello
+  remove:
+      name: Delete hello folder
+      runs-on: ubuntu-latest
 
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: remove hello folder
+      steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Remove file
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: hello
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: remove hello folder
