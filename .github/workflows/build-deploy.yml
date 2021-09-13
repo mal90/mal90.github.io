@@ -57,3 +57,7 @@ jobs:
       uses: JesseTG/rm@v1.0.2
       with:
         path: './hello'
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: remove hello folder
