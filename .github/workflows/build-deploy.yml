@@ -54,7 +54,7 @@ jobs:
         publish_dir: ./build
 
   remove:
-      name: Delete hello folder
+      name: Delete deploymnet folder
       runs-on: ubuntu-latest
 
       steps:
