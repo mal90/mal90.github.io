@@ -1,11 +1,14 @@
-import './App.css';
-import Header from './components/header/header';
+import LandingPage from './components/LandingPage/LandingPage';
+import Menu from './components/Menu/Menu';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <span className="app">
+      <Menu/>
+      <LandingPage/>
+    </span>
   );
 }
 
