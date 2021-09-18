@@ -1,13 +1,36 @@
 import React from "react";
+import ReactMarkdown from "react-markdown"
+import { Link }  from "react-router-dom"
 
-class Blog extends React.Component {
-  render() {
-    return (
-      <span className="blog-container">
-        this is blog
-      </span>
-    );
-  }
+import postlist from "../../posts.json"
+
+
+
+const Blog = (props) => {
+
+  console.log(postlist);
+
+  const excerptList = postlist.map(post => {
+    return post.content.split(" ").slice(0, 20).join(" ") + "..."
+  })
+
+  return (
+    <span className="blog-container">
+      <h1 className="title">All Posts</h1>
+      <ul>
+      { postlist.length &&
+        postlist.map((post, i) => {
+          return (
+            <li key={i} className="post-card">
+              <h2><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h2>
+              <small>Published on {post.date} by {post.author}</small>
+            </li>
+          )
+        })
+      }
+      </ul>
+    </span>
+  );
 }
 
 export default Blog;
