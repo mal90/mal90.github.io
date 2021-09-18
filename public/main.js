@@ -33,7 +33,7 @@ const getContent = (lines, index) => {
 const getPosts = () => {
   fs.readdir(dirPath, (err, files) => {
     if (err) {
-      return console.log(`File read failed ${err}`);
+      return console.error(`File read failed ${err}`);
     }
 
     files.forEach((file, i) => {

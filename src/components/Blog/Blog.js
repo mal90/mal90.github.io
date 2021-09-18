@@ -3,12 +3,7 @@ import { Link }  from "react-router-dom"
 
 import postlist from "../../posts.json"
 
-
-
 const Blog = (props) => {
-
-  console.log(postlist);
-
   return (
     <span className="blog-container">
       <h1 className="title">All Posts</h1>

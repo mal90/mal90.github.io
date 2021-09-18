@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 import postlist from "../../posts.json"
 
-
-
 const Post = (props) => {
 
   const validId = parseInt(props.match.params.id)
@@ -15,6 +13,7 @@ const Post = (props) => {
 
   const fetchedPost = {}
   let postExists = false
+
   postlist.forEach((post, i) => {
       if (validId === post.id) {
           fetchedPost.title = post.title ? post.title : "No title given"
