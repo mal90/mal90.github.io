@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
 
 import postlist from "../../posts.json"
 
@@ -26,6 +27,7 @@ const Post = (props) => {
 
   return (
     <div className="post">
+      <Link to="/blog"> Go back to list of posts </Link>
       <h2>{fetchedPost.title}</h2>
       <small>Published on {fetchedPost.date} by {fetchedPost.author}</small>
       <hr/>
