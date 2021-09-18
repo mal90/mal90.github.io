@@ -13,8 +13,8 @@ class Menu extends React.Component {
         <img src={dp} alt="Logo" />
         <ul className="menu-container">
           <MenuItem redirect="/" name="Home"/>
-          <MenuItem redirect="about" name="About"/>
-          <MenuItem redirect="blog" name="Blog"/>
+          <MenuItem redirect="/about" name="About"/>
+          <MenuItem redirect="/blog" name="Blog"/>
         </ul>
       </span>
     );

@@ -6,6 +6,7 @@ import {
 import About from "../About/About";
 import Blog from "../Blog/Blog";
 import Home from "../Home/Home";
+import Post from "../Post/Post";
 
 import "./LandingPage.scss"
 
@@ -17,12 +18,13 @@ class LandingPage extends React.Component {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/about">
+            <Route exact path="/about">
               <About />
             </Route>
-            <Route path="/blog">
+            <Route exact path="/blog">
               <Blog />
             </Route>
+            <Route exact path="/post/:id" render={props => <Post {...props} />} />
         </Switch>
       </span>
     );

@@ -1,5 +1,4 @@
 import React from "react";
-import ReactMarkdown from "react-markdown"
 import { Link }  from "react-router-dom"
 
 import postlist from "../../posts.json"
@@ -9,10 +8,6 @@ import postlist from "../../posts.json"
 const Blog = (props) => {
 
   console.log(postlist);
-
-  const excerptList = postlist.map(post => {
-    return post.content.split(" ").slice(0, 20).join(" ") + "..."
-  })
 
   return (
     <span className="blog-container">
