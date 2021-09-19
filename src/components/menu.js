@@ -4,7 +4,7 @@ import MenuItem from "./menu-item";
 
 import "./components.scss";
 
-import dp from "../assets/dp.jpeg"
+import dp from "../assets/images/dp.jpeg"
 
 const Blog = (props) => {
   return (

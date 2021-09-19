@@ -6,6 +6,7 @@ import './index.css';
 import LandingPage from './pages/landing-page';
 import Menu from './components/menu';
 import Footer from './components/footer';
+import "typeface-raleway";
 
 ReactDOM.render(
   <React.StrictMode>

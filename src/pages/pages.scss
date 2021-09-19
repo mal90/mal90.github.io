@@ -8,7 +8,7 @@
   height: 100vh;
   width: 100%;
   justify-content: space-between;
-  background-color: #DDDDDD;
+  background-image: url("../assets/images/bg.png");
 }
 
 .landing-page {
@@ -20,16 +20,24 @@
   padding: 25px;
 }
 
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .home-container,
 .about-container {
+  display: flex;
+  flex-direction: column;
   margin: auto;
+  justify-content: center;
+  text-align: center;
+  a {
+    margin-top: 20px;
+  }
 }
+
+.about-container {
+  li {
+    margin: 20px 0;
+  }
+}
+
 
 .blog-container,
 .post-container {
@@ -55,3 +63,7 @@
     margin-top: 10px;
   }
 }
+
+// .markdown-container {
+//   margin-top: 20px;
+// }
