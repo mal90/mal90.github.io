@@ -6,13 +6,13 @@ class About extends React.Component {
       <span className="about-container">
         <ul>
           <li>
-            Github
+            <a href="https://github.com/mal90"> Github </a>
           </li>
           <li>
-            LinkedIn
+            <a href="https://www.linkedin.com/in/maliksalim/"> LinkedIn </a>
           </li>
           <li>
-            Instagram
+            <a href="https://www.instagram.com/madkmalik/"> Instagram </a>
           </li>
         </ul>
       </span>

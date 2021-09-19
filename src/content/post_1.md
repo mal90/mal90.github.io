@@ -20,3 +20,5 @@ In simpler terms it means that it is a way of tying an object to the DOM . If yo
 Now let talk about `$rootscope`.
 
 `$rootscope` is the parent (more like a root parent) of all the `$scopes` you create . It is the ultimate boss . It is (almost) like the Object class of Java .It is the top most `$scope` of your app and it contains ng-app directive . There is only one `$rootscope` for each of the Angular application .
+
+![ difference ](https://lazydevguy.files.wordpress.com/2015/02/blog.png)
