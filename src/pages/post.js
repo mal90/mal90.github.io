@@ -25,10 +25,9 @@ const Post = (props) => {
   return (
     <div className="post-container">
       <Link className="go-back" to="/blog"> back to all posts </Link>
-      <h4 className="post-title">{fetchedPost.title}</h4>
       <small>Published on {fetchedPost.date} by {fetchedPost.author}</small>
       <hr/>
-      <div className="markdown-container">
+      <div className="markdown-body">
         <ReactMarkdown children={fetchedPost.content}/>
       </div>
     </div>
