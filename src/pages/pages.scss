@@ -1,0 +1,57 @@
+.app {
+  display: flex;
+}
+
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #DDDDDD;
+}
+
+.landing-page {
+  display: flex;
+  height: 100%;
+}
+
+.side-menu {
+  padding: 25px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container,
+.about-container {
+  margin: auto;
+}
+
+.blog-container,
+.post-container {
+  padding: 25px;
+}
+
+.blog-container {
+  .main-title {
+    margin-bottom: 10px;
+  }
+
+  .post-item {
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 30px -16px black;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+  }
+}
+
+.post-container {
+  .post-title {
+    margin-top: 10px;
+  }
+}

@@ -3,12 +3,12 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import About from "../About/About";
-import Blog from "../Blog/Blog";
-import Home from "../Home/Home";
-import Post from "../Post/Post";
+import About from "./about";
+import Blog from "./blog";
+import Home from "./home";
+import Post from "./post";
 
-import "./LandingPage.scss"
+import "./pages.scss"
 
 class LandingPage extends React.Component {
   render() {

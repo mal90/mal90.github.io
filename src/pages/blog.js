@@ -1,18 +1,18 @@
 import React from "react";
 import { Link }  from "react-router-dom"
 
-import postlist from "../../posts.json"
+import postlist from "../posts.json"
 
 const Blog = (props) => {
   return (
     <span className="blog-container">
-      <h1 className="title">All Posts</h1>
+      <h3 className="main-title">All Posts</h3>
       <ul>
       { postlist.length &&
         postlist.map((post, i) => {
           return (
-            <li key={i} className="post-card">
-              <h2><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h2>
+            <li key={i} className="post-item">
+              <h4><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h4>
               <small>Published on {post.date} by {post.author}</small>
             </li>
           )
