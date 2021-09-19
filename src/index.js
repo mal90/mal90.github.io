@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import { HashRouter } from "react-router-dom";
+
+import './index.css';
+import LandingPage from './pages/landing-page';
+import Menu from './components/menu';
+import Footer from './components/footer';
+import "typeface-raleway";
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
-      <App />
+      <span className="app">
+        <Menu/>
+        <span className="landing-page-container">
+          <LandingPage/>
+          <Footer/>
+        </span>
+      </span>
     </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')

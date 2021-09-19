@@ -6,7 +6,7 @@ import {
 class MenuItem extends React.Component {
   render() {
     return (
-      <li>
+      <li className="menu-item">
         <Link to={this.props.redirect}>{this.props.name}</Link>
       </li>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 
-import postlist from "../../posts.json"
+import postlist from "../posts.json"
 
 const Post = (props) => {
 
@@ -23,12 +23,13 @@ const Post = (props) => {
   })
 
   return (
-    <div className="post">
-      <Link to="/blog"> Go back to list of posts </Link>
-      <h2>{fetchedPost.title}</h2>
+    <div className="post-container">
+      <Link className="go-back" to="/blog"> back to all posts </Link>
       <small>Published on {fetchedPost.date} by {fetchedPost.author}</small>
       <hr/>
-      <ReactMarkdown children={fetchedPost.content} />
+      <div className="markdown-body">
+        <ReactMarkdown children={fetchedPost.content}/>
+      </div>
     </div>
   );
 }
