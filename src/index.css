@@ -1,4 +1,9 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
+  /* position: relative; */
   margin: 0;
   font-family: raleway;
   -webkit-font-smoothing: antialiased;
