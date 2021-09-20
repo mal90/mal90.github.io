@@ -13,7 +13,22 @@ const App = () => {
 
   return (
     <span className="app">
-    <button className="close" onClick={() => toggleMenu()}> x</button>
+    <div className={`burger-btn ${data ? "closed" : "opened"}`} onClick={() => toggleMenu()}>
+      {
+        data ?
+        (
+          <span>
+            <span className="burger-line"></span>
+            <span className="burger-line"></span>
+            <span className="burger-line"></span>
+          </span>
+        )
+        :
+        (
+          <ion-icon size="large" name="close-outline" className="close-btn"></ion-icon>
+        )
+      }
+    </div>
     <Menu toggleMenu={data}/>
     <span className="landing-page-container">
       <LandingPage/>

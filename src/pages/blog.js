@@ -5,7 +5,7 @@ import postlist from "../posts.json"
 
 const Blog = (props) => {
   return (
-    <span className="blog-container">
+    <div className="blog-container">
       <h3 className="main-title">All Posts</h3>
       <ul>
       { postlist.length &&
@@ -21,7 +21,7 @@ const Blog = (props) => {
         })
       }
       </ul>
-    </span>
+    </div>
   );
 }
 
