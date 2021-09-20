@@ -6,9 +6,9 @@ import "./components.scss";
 
 import dp from "../assets/images/dp.jpeg"
 
-const Blog = (props) => {
+const Menu = ({toggleMenu}) => {
   return (
-    <span className="side-menu">
+    <span className="side-menu" style={{ display: !toggleMenu ? "block" : "none" }}>
       <img src={dp} alt="Logo" />
       <ul className="menu-container">
         <MenuItem redirect="/" name="Home"/>
@@ -19,4 +19,4 @@ const Blog = (props) => {
   );
 }
 
-export default Blog;
+export default Menu;
