@@ -44,13 +44,13 @@
 
 .blog-container,
 .post-container {
+  margin-top: 45px;
   padding: 25px;
 }
 
 .blog-container {
-  margin-top: 20px;
   .main-title {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .post-item {
@@ -64,7 +64,7 @@
 
 .post-container {
   overflow: auto;
-  height: 815px;
+  height: 695px;
   small {
     display: block;
     margin-top: 20px;

@@ -6,7 +6,7 @@
 }
 
 .menu-item {
-  padding: 5px 0;
+  padding: 15px 0;
   text-decoration: none;
 }
 
@@ -18,7 +18,7 @@
 
 .side-menu {
   background-color: white;
-  padding: 25px;
+  padding: 75px 25px;
   position: fixed;
   height: 100%;
   left: 0;
@@ -41,7 +41,30 @@
   position: absolute;
   z-index: 2;
   display: block;
+  padding: 25px;
   @media (min-width: 768px) {
     display: none;
   }
+  .burger-line {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: black;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+  }
+}
+
+.close-btn {
+  margin-top: 10px !important;
 }
