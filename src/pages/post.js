@@ -24,7 +24,12 @@ const Post = (props) => {
 
   return (
     <div className="post-container">
-      <Link className="go-back" to="/blog"> back to all posts </Link>
+      <Link className="go-back" to="/blog">
+        <span className="arrow-back-outline">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </span>
+        back to all posts
+      </Link>
       <small>Published on {fetchedPost.date} by {fetchedPost.author}</small>
       <hr/>
       <div className="markdown-body">

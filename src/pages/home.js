@@ -7,9 +7,9 @@ class Home extends React.Component {
   render() {
     return (
       <span className="home-container">
-        <h1> Hello, i am a frontend developer from Sri Lanka</h1>
+        <h1> Hello, i am a Frontend developer from Sri Lanka</h1>
         <Link className="about" to="about">
-          get to know me
+          Get to know me! 👋
         </Link>
       </span>
     );

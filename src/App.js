@@ -13,7 +13,9 @@ const App = () => {
 
   return (
     <span className="app">
-    <button className="close" onClick={() => toggleMenu()}> x</button>
+    <button className="burger-btn" onClick={() => toggleMenu()}>
+      x
+    </button>
     <Menu toggleMenu={data}/>
     <span className="landing-page-container">
       <LandingPage/>

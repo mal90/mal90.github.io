@@ -14,17 +14,17 @@ class LandingPage extends React.Component {
   render() {
     return (
       <span className="landing-page">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/blog">
-              <Blog />
-            </Route>
-            <Route exact path="/post/:id" render={props => <Post {...props} />} />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/blog">
+            <Blog />
+          </Route>
+          <Route exact path="/post/:id" render={props => <Post {...props} />} />
         </Switch>
       </span>
     );
