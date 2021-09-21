@@ -32,4 +32,10 @@ h5 {
 
 a {
   text-decoration: none;
+  color: #bc6c25;
+  &:hover {
+    color: #fec5bb;
+  }
 }
+
+/* a:visited { color: unset } */

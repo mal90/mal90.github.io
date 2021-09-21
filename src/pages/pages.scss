@@ -27,8 +27,14 @@
 }
 
 .home-container {
+  color: #bc6c25;
   a {
     margin-top: 20px;
+    font-weight: 700;
+  }
+  .about-icon {
+    margin-left: 6px;
+    vertical-align: middle;
   }
 }
 
@@ -46,11 +52,15 @@
 .post-container {
   margin-top: 45px;
   padding: 25px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .blog-container {
   .main-title {
     margin-bottom: 15px;
+    color: #bc6c25;
   }
 
   .post-item {

@@ -9,7 +9,10 @@ class Home extends React.Component {
       <span className="home-container">
         <h1> Hello, i am a Frontend developer from Sri Lanka</h1>
         <Link className="about" to="about">
-          Get to know me! 👋
+         👋 Get to know me
+          <span className="about-icon">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </span>
         </Link>
       </span>
     );

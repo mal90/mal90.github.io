@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect }  from "react";
 import {
   Switch,
   Route,
+  useLocation
 } from "react-router-dom";
 import About from "./about";
 import Blog from "./blog";
@@ -10,25 +11,23 @@ import Post from "./post";
 
 import "./pages.scss"
 
-class LandingPage extends React.Component {
-  render() {
-    return (
-      <span className="landing-page">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/blog">
-            <Blog />
-          </Route>
-          <Route exact path="/post/:id" render={props => <Post {...props} />} />
-        </Switch>
-      </span>
-    );
-  }
+const LandingPage = () => {
+  return (
+    <span className="landing-page">
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/blog">
+          <Blog />
+        </Route>
+        <Route exact path="/post/:id" render={props => <Post {...props} />} />
+      </Switch>
+    </span>
+  );
 }
 
 export default LandingPage;

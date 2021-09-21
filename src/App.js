@@ -5,17 +5,17 @@ import Menu from './components/menu';
 import Footer from './components/footer'
 
 const App = () => {
-  const [data, setData] = useState('');
+  const [toggleState, setToggleState] = useState(false);
 
   const toggleMenu = () => {
-    setData(!data);
+    setToggleState(!toggleState)
   }
 
   return (
     <span className="app">
-    <div className={`burger-btn ${data ? "closed" : "opened"}`} onClick={() => toggleMenu()}>
+    <div className="burger-btn" onClick={() => toggleMenu()}>
       {
-        data ?
+        !toggleState ?
         (
           <span>
             <span className="burger-line"></span>
@@ -29,9 +29,9 @@ const App = () => {
         )
       }
     </div>
-    <Menu toggleMenu={data}/>
+    <Menu toggleMenu={toggleState} setToggleMenu={setToggleState}/>
     <span className="landing-page-container">
-      <LandingPage/>
+      <LandingPage />
       <Footer/>
     </span>
   </span>
