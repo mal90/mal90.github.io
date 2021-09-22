@@ -11,8 +11,8 @@ const Blog = (props) => {
       { postlist.length &&
         postlist.map((post, i) => {
           return (
-            <Link className="links" to={`/post/${post.id}`}>
-              <li key={i} className="post-item">
+            <Link key={post.id} className="links" to={`/post/${post.id}`}>
+              <li className="post-item">
                 <h4>{post.title}</h4>
                 <small>Published on {post.date} by {post.author}</small>
               </li>
