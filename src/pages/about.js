@@ -13,6 +13,12 @@ class About extends React.Component {
           </li>
           <li>
             <span className="link-icon">
+              <ion-icon name="logo-stackoverflow"></ion-icon>
+            </span>
+            <a href="https://stackoverflow.com/users/1305026/malik"> Stack overflow </a>
+          </li>
+          <li>
+            <span className="link-icon">
               <ion-icon name="logo-linkedin"></ion-icon>
             </span>
             <a href="https://www.linkedin.com/in/maliksalim/"> LinkedIn </a>
