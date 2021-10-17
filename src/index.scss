@@ -3,11 +3,11 @@ html, body {
 }
 
 body {
-  /* position: relative; */
   margin: 0;
   font-family: raleway;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth
 }
 
 code {
