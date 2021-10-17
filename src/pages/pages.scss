@@ -11,9 +11,9 @@
   background-image: url("../assets/images/bg.png");
 }
 
-.landing-page {
-  height: 100%;
-}
+// .landing-page {
+//   height: 100%;
+// }
 
 .home-container,
 .about-container {
@@ -76,8 +76,7 @@
 }
 
 .post-container {
-  overflow: auto;
-  height: 800px;
+  background-image: url("../assets/images/bg.png");
   small {
     display: block;
     margin-top: 20px;
