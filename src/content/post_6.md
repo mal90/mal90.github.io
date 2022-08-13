@@ -1,7 +1,7 @@
 ---
 title: How to face software engineering internship interviews?
 author: Malik
-date: December 29, 2016
+date: December 30, 2016
 ---
 
 
