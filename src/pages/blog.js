@@ -13,8 +13,14 @@ const Blog = (props) => {
           return (
             <Link key={post.id} className="links" to={`/post/${post.id}`}>
               <li className="post-item">
-                <h4>{post.title}</h4>
-                <small>Published on {post.date} by {post.author}</small>
+                <span class="post-title">
+                  <ion-icon name="newspaper-outline"></ion-icon>
+                  <h4>{post.title}</h4>
+                </span>
+                <span class="date">
+                  <ion-icon name="calendar-number-outline"></ion-icon>
+                  <small>Published on {post.date}</small>
+                </span>
               </li>
             </Link>
           )
