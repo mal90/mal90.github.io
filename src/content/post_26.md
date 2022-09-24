@@ -1,7 +1,7 @@
 ---
 title: Moving from Wordpress to Github Pages
 author: Malik
-date: June 4, 2020
+date: September 25, 2022
 ---
 
 ## Moving from Wordpress to Github Pages - Part 1
