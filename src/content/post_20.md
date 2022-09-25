@@ -1,5 +1,5 @@
 ---
-title: Issue creating Angular custom elements on Stackblitz. Error Failed to construct ‘HTMLElement’ Please use the ‘new’ …”
+title: Issue creating Angular custom elements on Stackblitz. Error Failed to construct ‘HTMLElement’”
 author: Malik
 date: May 27, 2018
 ---
